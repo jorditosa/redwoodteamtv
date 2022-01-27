@@ -1,0 +1,35 @@
+@use '../base/custom' as *;
+
+.cookie-container {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background-color: darken($info, 35%) ;
+    opacity: .9;
+    color: $light;
+    font-size: 1.2rem;
+    padding: 0 4rem;
+    border-style: 0 -0.2rem 1.6rem $secondary;
+
+    transition: 4s;
+
+    a {
+        color: $light;
+    }
+}
+.cookie-container.active {
+    bottom: 0;
+  }
+
+.cookie-btn {
+    background-color: $light;
+    border: 0;
+    color: $primary;
+    padding: 0.6rem 1.2rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
+}

@@ -1,0 +1,64 @@
+@use '../base/custom' as *;
+
+ /*
+.menu {
+
+    box-shadow: 0rem 0rem 8rem 1rem $primary;
+    -webkit-box-shadow: 0rem 0rem 8rem 1rem $primary;
+
+    &:nth-child(1){
+        border-radius: 50%;
+    }
+    &:nth-child(2) {
+        border-radius: 50%;
+    }
+    &:nth-child(3) {
+        border-radius: 50%;
+    }
+    transition: 0.7s ease-in-out;
+
+    &:hover {
+
+        text-shadow: 3px 3px 0 $primary, 6px 6px 0 $secondary, 9px 9px $info;
+        text-transform: uppercase;
+        font-size: 4rem;
+        text-align: center;
+        margin: 0;
+        color: $primary;
+        transform: rotate(-360deg) scale(0.8);
+        letter-spacing: 0.2rem;
+
+        filter: invert(1);
+}
+
+&-item {
+
+    color: $primary;
+    text-shadow: 0 2px 2px $info, 
+      -2px 5px 1px #cbcbcb,
+      -4px 8px 1px #979797, 
+      -6px 11px 1px #a2a2a2, 
+      -8px 14px 1px #aeaeae, 
+      -10px 17px 1px #b5b5b5, 
+      -12px 20px 1px #bebebe;
+      
+
+    padding: 3.6rem 0;
+    font-size: 2.6rem;
+    letter-spacing: 0.3rem;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    @include media-breakpoint-up(md) {
+            padding: 3.6rem 0;
+            font-size: 2.4rem;
+           
+        }
+    @include media-breakpoint-up(lg) {
+        padding: 5rem 0;
+        font-size: 3.2rem; 
+        }
+    }
+}
+
+*/
