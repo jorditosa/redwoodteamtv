@@ -11311,7 +11311,7 @@ body video {
 .nav-link:after {
   content: "";
   position: absolute;
-  top: 2px;
+  top: 0.2rem;
   left: 0;
   width: 100%;
   height: 100%;
@@ -11472,6 +11472,7 @@ body video {
   padding: 0.6rem;
   border-bottom: 0.2rem solid #f8f5f6;
   border-left: 0.2rem solid #DB0025;
+  border-right: 0.2rem solid #ff043c;
   text-align: start;
 }
 .work-container p {
@@ -11525,53 +11526,9 @@ body video {
   height: 100%;
   background: #FF043C;
   transition: 0.5s;
-  opacity: 0.6;
+  opacity: 0.4;
   z-index: 2;
+  cursor: pointer;
 }
 
-/*
-    img {
-        max-height: 30rem;
-    }
-
-    &-effect {
-        position: relative; 
-        display: block;
-        width: 100%;
-        height: auto;
-        text-align: center;
-        line-height: 63px;
-        font-size: 30px;
-        color: #666;
-        transition: .5s;
-
-        &::before{
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: $info;
-            transition: .5s;
-            transform: scale(.9);
-            z-index: -1;
-        }
-        &:hover {
-            color: $info;
-            box-shadow: 0 0 1rem $info;
-            text-shadow: 0 0 1rem $info;
-            &::before {
-                transform: scale(1.1);
-                box-shadow: 0 0 11rem $info;
-            }
-        }
-
-
-    }
-
-    }
-
-
-*/
 /*# sourceMappingURL=app.css.map */
