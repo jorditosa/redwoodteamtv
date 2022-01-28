@@ -11514,9 +11514,15 @@ body video {
   text-transform: uppercase;
   font-weight: bold;
   padding: 0.6rem;
-  border-bottom: 0.2rem solid #f8f5f6;
-  border-left: 0.2rem solid #DB0025;
   text-align: start;
+}
+.work-container h2.work-heading-a {
+  border-bottom: 0.2rem outset #f8f5f6;
+  border-left: 0.2rem outset #DB0025;
+}
+.work-container h2.work-heading-b {
+  border-bottom: 0.2rem outset #f8f5f6;
+  border-right: 0.2rem outset #DB0025;
 }
 .work-container p {
   color: #f8f5f6;
@@ -11526,7 +11532,7 @@ body video {
 
 .work {
   max-width: 75%;
-  height: 20rem;
+  height: 15rem;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11535,6 +11541,11 @@ body video {
   position: relative;
   overflow: hidden;
   z-index: 1;
+}
+@media (min-width: 576px) {
+  .work {
+    height: 20rem;
+  }
 }
 .work video {
   width: 100%;
