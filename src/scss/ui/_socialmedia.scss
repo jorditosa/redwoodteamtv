@@ -1,0 +1,15 @@
+@use '../base/custom' as *;
+@use '../base/globals' as *;
+
+.social {
+
+    i {
+        color: $primary;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+            opacity: 0.5;
+            transform: scale(1.1);
+        }
+    }
+}

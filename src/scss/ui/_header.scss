@@ -7,6 +7,8 @@
   }
 
   .nav-link {
+
+    @include media-breakpoint-up(md) {
       position: relative;
       display: inline;
       text-transform: uppercase;
@@ -21,7 +23,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        border-bottom: 0.3rem solid $primary;
+        border-bottom: 0.2rem solid $primary;
         transform: scaleY(2);
         opacity: 0;
         transition: .3s ease-in-out;
@@ -49,6 +51,8 @@
         opacity: 1;
       }
     }
+    }
+     
   }
 
 .navbar-toggler:focus {
@@ -58,7 +62,7 @@
  
 .navbar-nav {
 
-  background: linear-gradient(0deg, rgba(255,4,60,0) 0%, darken($primary, 45%) 60%);
+  background: linear-gradient(0deg, rgba(255,4,60,0) 0%, darken($primary, 40%) 60%);
   color: $light;
   text-transform: uppercase;
   letter-spacing: 0.1;

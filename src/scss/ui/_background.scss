@@ -4,7 +4,6 @@ body {
 
     video {
         position: fixed;
-        filter: grayscale(10%);
 
         min-height: 100%;
         min-width: 100%;
@@ -17,11 +16,11 @@ body {
     }
 }
 .bg-header {
-    background: linear-gradient(0deg, rgba(255,4,60,0) 0%, darken($primary, 45%) 50%);
+    background: linear-gradient(0deg, rgba(255,4,60,0) 0%, darken($primary, 40%) 40%);
 }
 
 .bg-footer {
-    background: linear-gradient(180deg, rgba(255,4,60,0) 0%, darken($primary, 45%) 50%);
+    background: linear-gradient(180deg, rgba(255,4,60,0) 0%, darken($primary, 40%) 40%);
 }
 
 
