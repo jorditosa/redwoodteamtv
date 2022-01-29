@@ -14,6 +14,7 @@
             background-size: cover;
             background-repeat: no-repeat;
             width: 5rem;
+            height: 5rem;
         }
     }
 }
@@ -27,11 +28,11 @@
         text-align: start;
         &.work-heading-a {
             border-bottom: 0.2rem outset $light;
-            border-left: 0.2rem outset $info;
+            border-left: 0.2rem inset $info;
         }
         &.work-heading-b {
             border-bottom: 0.2rem outset $light;
-            border-right: 0.2rem outset $info;
+            border-right: 0.2rem inset $info;
         }
 
     }
@@ -55,7 +56,7 @@
     z-index: 1;
 
     @include media-breakpoint-up(sm) {
-        height: 20rem;
+        height: 24rem;
     }
 
     video {
@@ -85,14 +86,12 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: $primary;
+        background: $light;
         transition: .5s;
         opacity: 0.2;
         z-index: 2;
         cursor: pointer;
-        
-      }
-    
+      }   
 }
 
 

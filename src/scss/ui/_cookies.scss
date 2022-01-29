@@ -5,14 +5,14 @@
     bottom: -100%;
     left: 0;
     right: 0;
-    background-color: darken($info, 35%) ;
+    background-color: darken($info, 45%) ;
     opacity: .9;
     color: $light;
     font-size: 1.2rem;
-    padding: 0 4rem;
+    padding: 1rem 4rem;
     border-style: 0 -0.2rem 1.6rem $secondary;
 
-    transition: 4s;
+    transition: 3s;
 
     a {
         color: $light;
@@ -23,6 +23,7 @@
   }
 
 .cookie-btn {
+    display: inline-block;
     background-color: $light;
     border: 0;
     color: $primary;
