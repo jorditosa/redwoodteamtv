@@ -1,0 +1,19 @@
+@use '../base/custom' as *;
+@use '../base/globals' as *;
+
+body {
+
+    background-color: $dark;
+    animation: transitionIn 2s;
+}
+
+@keyframes transitionIn {
+
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+
+    }
+}
