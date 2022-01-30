@@ -16,6 +16,7 @@
   <link rel="icon" type="image/x-icon" href="build/img/logo.png">
   <link rel="stylesheet" href="build/css/app.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  
 
   <title>Redwood Team TV | Productora Audiovisual i service Barcelona</title>
 
@@ -79,16 +80,31 @@
 
                 <div class="row px-0 py-1 py-sm-3 py-lg-5 mx-0 work-container">
                     <div class="col-md-9 work px-0">
-                      <video src="build/img/hla (720p).mp4" autoplay muted loop>
+                      <video class="img-fluid" src="build/img/hla (720p).mp4" autoplay muted loop>
                         <source type="video/mp4">
                       </video>
                     </div>
                     <div class="col-md-3 text-start d-md-block py-0 py-sm-5">
                         <h2 class="work-heading-a">HLA</h2>
                         <p class="text-primary m-1">Production House</p>
-                        <button type="button" class="btn btn-outline-info btn-sm rounded">
-                          <a href="https://vimeo.com/528914399" target="blank" class="text-light text-decoration-none" alt="video HLA">View trailer</a>
-                        </button>     
+                        <div><!--INICIO MODAL -->
+                          <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#modal1">View trailer</button>
+                
+                          <!-- MODAL -->
+                          <div id="modal1" class="modal fade">
+                            <div class="modal-dialog modal-fullscreen">
+                              <div class="modal-content container-lg bg-dark">
+                                <div class="modal-header">
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <video src="build/img/hla (720p).mp4" class="img-fluid" controls></video>
+                                </div>
+                  
+                              </div>
+                            </div>
+                          </div>
+                        </div><!-- fin MODAL -->   
                     </div>
                 </div> <!-- FIN PROYECTO IZQ -->
 
@@ -96,9 +112,24 @@
                     <div class="col-md-3 text-end d-md-block py-0 py-sm-5">
                         <h2 class="work-heading-b">Ringtone</h2>
                         <p class="text-primary m-1">Rehab</p>
-                        <button type="button" class="btn btn-outline-info btn-sm rounded">
-                          <a href="https://vimeo.com/515229701" target="blank" class="text-light text-decoration-none">View trailer</a>
-                        </button>
+                        <div><!--INICIO MODAL -->
+                          <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#modal2">View trailer</button>
+                
+                          <!-- MODAL -->
+                          <div id="modal2" class="modal fade">
+                            <div class="modal-dialog modal-fullscreen">
+                              <div class="modal-content container-xl bg-dark">
+                                <div class="modal-header">
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <video src="build/img/ringtone_-_director's_cut (720p).mp4" class="img-fluid" controls></video>
+                                </div>
+                  
+                              </div>
+                            </div>
+                          </div>
+                        </div><!-- fin MODAL -->   
                     </div>
                     <div class="col-md-9 work px-0">
                       <video autoplay muted loop>
@@ -116,16 +147,31 @@
                   <div class="col-md-3 text-start d-md-block py-0 py-sm-5">
                       <h2 class="work-heading-a">BMW ix edition</h2>
                       <p class="text-primary m-1">Production House</p>
-                      <button type="button" class="btn btn-outline-info btn-sm rounded">
-                        <a href="https://vimeo.com/597051986?embedded=true&source=video_title&owner=9275598" target="blank" class="text-light text-decoration-none" alt="video Bmw">View trailer</a>
-                      </button>     
+                      <div><!--INICIO MODAL -->
+                        <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#modal3">View trailer</button>
+              
+                        <!-- MODAL -->
+                        <div id="modal3" class="modal fade">
+                          <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content container-xl bg-dark">
+                              <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                              </div>
+                              <div class="modal-body">
+                                <video src="build/img/bmw_ix_edition (720p).mp4" class="img-fluid" controls></video>
+                              </div>
+                
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- fin MODAL -->      
                   </div>
               </div> <!-- FIN PROYECTO IZQ -->
 
-
         </main>
 
-
+        
+        
 
 
 
