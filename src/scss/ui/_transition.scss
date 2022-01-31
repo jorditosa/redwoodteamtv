@@ -4,16 +4,19 @@
 body {
 
     background-color: $dark;
-    animation: transitionIn 3.5s;
+    animation: transitionIn 4s;
+
 }
 
 @keyframes transitionIn {
 
     from {
         opacity: 0;
+       
     }
     to {
         opacity: 1;
+      
 
     }
 }
