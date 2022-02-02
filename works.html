@@ -36,41 +36,47 @@
 
   <section class="container-fluid d-flex w-100 h-100 mx-0 p-0 flex-column justify-content-between">
 
-    <header class="pb-4">
-      <nav class="navbar navbar-expand-lg navbar-dark header-background pt-0">
-        <div class="container-fluid bg-header px-0 px-md-5 py-1">
-          <a class="navbar-brand text-start" href="index.html">
-            <img class="logo" src="build/img/redwood-logotext.webp" alt="logo redwood text">
-          </a>
-          <button class="navbar-toggler text-light fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse mb-4 mb-md-0" id="navbarNavAltMarkup">
-            <div class="navbar-nav w-100 d-flex flex-column flex-lg-row justify-content-end py-3">
-              <a class="nav-link fs-6 text-center px-md-4 py-auto" href="works.html">Works</a>
-              <a class="nav-link fs-6 text-center px-md-4 py-auto" href="#">Red...what?</a>
-              <a class="nav-link fs-6 text-center px-md-4 py-auto" href="#">Team</a>
-              <a class="nav-link fs-6 text-center px-md-4 py-auto" href="contact.html">Contact</a>
-              <div class="social text-center fs-6 px-md-5 py-1">
-                <a href="https://vimeo.com/redwoodteam" target="blank" class="text-decoration-none">
-                  <i class="bi bi-vimeo text-light pe-3"></i>
-                </a>        
-                <a href="https://es.linkedin.com/company/redwood-team" target="blank" class="text-decoration-none">
-                  <i class="bi bi-linkedin text-light"></i>
-                </a>
-                <a href="https://www.instagram.com/redwood_team/" target="blank" class="text-decoration-none">
-                  <i class="bi bi-instagram text-light ps-3"></i>
-                </a>
-               <i class="fa fa-linkedin"></i> 
-              </div>
-            </div>
+    <header class="d-flex justify-content-between px-3 px-sm-5 py-1">
+      <a class="navbar-brand text-start" href="index.html">
+        <img class="logo" src="build/img/redwood-logotext.webp" alt="logo redwood text">
+      </a>
+      <a data-bs-toggle="offcanvas" data-bs-target="#menu">
+        <i class="bi bi-list fs-3"></i>
+      </a>
+    </div>
+   
+    <div id="menu" class="offcanvas offcanvas-end bg-primary">
+      <div class="offcanvas-header py-4">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body px-3">
+        <nav class="navbar-nav d-flex flex-column justify-content-end py-3">
+          <a class="nav-link fs-4 text-start px-lg-5 py-lg-2 text-light" href="works.html">Works</a>
+          <a class="nav-link fs-4 text-start px-lg-5 py-lg-2 text-light" href="#">Red...what?</a>
+          <a class="nav-link fs-4 text-start px-lg-5 py-lg-2 text-light" href="#">Team</a>
+          <a class="nav-link fs-4 text-start px-lg-5 py-lg-2 text-light" href="contact.html">Contact</a>
+          <div class="social text-start px-lg-5 fs-4 pt-5">
+            <a href="https://vimeo.com/redwoodteam" target="blank" class="text-decoration-none">
+              <i class="bi bi-vimeo text-light pe-3"></i>
+            </a>        
+            <a href="https://es.linkedin.com/company/redwood-team" target="blank" class="text-decoration-none">
+              <i class="bi bi-linkedin text-light"></i>
+            </a>
+            <a href="https://www.instagram.com/redwood_team/" target="blank" class="text-decoration-none">
+              <i class="bi bi-instagram text-light ps-3"></i>
+            </a>
+           <i class="fa fa-linkedin"></i> 
           </div>
-        </div>
-      </nav>
+          <div class="footer-copyight">
+            <p class="pt-5 px-lg-5 fs-6 text-uppercase">&copy;Redwood Team TV <span class="d-block">2022 All rights reserved.</span></p>
+          </div>
+        </nav>
+      </div>
     </header>
 
         <section class="page-description py-5">
             <div class="page-description-text col-md-9 mx-auto">
+                <h2 class="text-center fs-1 text-uppercase">Works</h2>
                 <p class="fs-5 text-light">Short description about redwood works. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, sapiente accusamus cumque est ea illo voluptatem earum a non sit, mollitia molestiae sequi amet exercitationem.</p>
             </div>
         </section>
@@ -80,7 +86,7 @@
 
                 <div class="row px-0 py-1 py-sm-3 py-lg-5 mx-0 work-container">
                     <div class="col-md-9 work px-0">
-                      <video class="img-fluid" src="build/img/hla (720p).mp4" autoplay muted loop>
+                      <video class="work-video" src="build/img/hla (720p).mp4" autoplay muted loop>
                         <source type="video/mp4">
                       </video>
                     </div>
@@ -132,7 +138,7 @@
                         </div><!-- fin MODAL -->   
                     </div>
                     <div class="col-md-9 work px-0">
-                      <video autoplay muted loop>
+                      <video class="work-video" autoplay muted loop>
                         <source src="build/img/ringtone_-_director's_cut (720p).mp4" type="video/mp4">
                       </video>
                     </div>
@@ -140,7 +146,7 @@
                 
                 <div class="row px-0 py-1 py-sm-3 py-lg-5 mx-0 work-container">
                   <div class="col-md-9 work px-0">
-                    <video src="build/img/bmw_ix_edition (720p).mp4" autoplay muted loop>
+                    <video class="work-video" src="build/img/bmw_ix_edition (720p).mp4" autoplay muted loop>
                       <source type="video/mp4">
                     </video>
                   </div>
@@ -177,9 +183,7 @@
 
 
         <footer class="footer text-center text-md-end fs-6 py-2 px-5 d-block flex-column flex-md-row bg-footer">
-          <div class="footer-copyight">
-            <p class="py-2 fs-6 mx-md-5 text-uppercase mb-0">&copy;Redwood Team TV <span class="d-block">2022 All rights reserved.</span></p>
-          </div>
+      
         </footer>
     </section>
 

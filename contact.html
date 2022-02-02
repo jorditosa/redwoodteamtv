@@ -35,37 +35,42 @@
 
   <section class="container-fluid d-flex w-100 h-100 mx-0 p-0 flex-column justify-content-between">
 
-    <header class="pb-4">
-      <nav class="navbar navbar-expand-lg navbar-dark header-background pt-0">
-        <div class="container-fluid bg-header px-0 px-md-5 py-1">
-          <a class="navbar-brand text-start" href="index.html">
-            <img class="logo" src="build/img/redwood-logotext.webp" alt="logo redwood text">
-          </a>
-          <button class="navbar-toggler text-light fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse mb-4 mb-md-0" id="navbarNavAltMarkup">
-            <div class="navbar-nav w-100 d-flex flex-column flex-lg-row justify-content-end py-3">
-              <a class="nav-link fs-6 text-center px-md-4 py-auto" href="works.html">Works</a>
-              <a class="nav-link fs-6 text-center px-md-4 py-auto" href="#">Red...what?</a>
-              <a class="nav-link fs-6 text-center px-md-4 py-auto" href="#">Team</a>
-              <a class="nav-link fs-6 text-center px-md-4 py-auto" href="contact.html">Contact</a>
-              <div class="social text-center fs-6 px-md-5 py-1">
-                <a href="https://vimeo.com/redwoodteam" target="blank" class="text-decoration-none">
-                  <i class="bi bi-vimeo text-light pe-3"></i>
-                </a>        
-                <a href="https://es.linkedin.com/company/redwood-team" target="blank" class="text-decoration-none">
-                  <i class="bi bi-linkedin text-light"></i>
-                </a>
-                <a href="https://www.instagram.com/redwood_team/" target="blank" class="text-decoration-none">
-                  <i class="bi bi-instagram text-light ps-3"></i>
-                </a>
-               <i class="fa fa-linkedin"></i> 
-              </div>
-            </div>
+    <header class="d-flex justify-content-between px-3 px-sm-5 py-1">
+      <a class="navbar-brand text-start" href="index.html">
+        <img class="logo" src="build/img/redwood-logotext.webp" alt="logo redwood text">
+      </a>
+      <a data-bs-toggle="offcanvas" data-bs-target="#menu">
+        <i class="bi bi-list fs-3"></i>
+      </a>
+    </div>
+   
+    <div id="menu" class="offcanvas offcanvas-end bg-primary">
+      <div class="offcanvas-header py-4">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body px-3">
+        <nav class="navbar-nav d-flex flex-column justify-content-end py-3">
+          <a class="nav-link fs-4 text-start px-lg-5 py-lg-2 text-light" href="works.html">Works</a>
+          <a class="nav-link fs-4 text-start px-lg-5 py-lg-2 text-light" href="#">Red...what?</a>
+          <a class="nav-link fs-4 text-start px-lg-5 py-lg-2 text-light" href="#">Team</a>
+          <a class="nav-link fs-4 text-start px-lg-5 py-lg-2 text-light" href="contact.html">Contact</a>
+          <div class="social text-start px-lg-5 fs-4 pt-5">
+            <a href="https://vimeo.com/redwoodteam" target="blank" class="text-decoration-none">
+              <i class="bi bi-vimeo text-light pe-3"></i>
+            </a>        
+            <a href="https://es.linkedin.com/company/redwood-team" target="blank" class="text-decoration-none">
+              <i class="bi bi-linkedin text-light"></i>
+            </a>
+            <a href="https://www.instagram.com/redwood_team/" target="blank" class="text-decoration-none">
+              <i class="bi bi-instagram text-light ps-3"></i>
+            </a>
+           <i class="fa fa-linkedin"></i> 
           </div>
-        </div>
-      </nav>
+          <div class="footer-copyight">
+            <p class="pt-5 px-lg-5 fs-6 text-uppercase">&copy;Redwood Team TV <span class="d-block">2022 All rights reserved.</span></p>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <section>
@@ -76,13 +81,7 @@
       <div class="container-xl">
        
         <div class="row py-3 py-sm-4 border-top border-primary">
-          <div class="col-sm-7">
-            <h4 class="text-center text-sm-start fs-6">Quisui Cognom</h4>
-            <p class="text-center text-sm-start fs-6 text-secondary">email@quisigui.com</p>
-            <h4 class="text-center text-sm-start fs-6">Quisui Cognom</h4>
-            <p class="text-center text-sm-start fs-6 text-secondary">email@quisigui.com</p>
-          </div>
-          <div class="col-sm-5">
+          <div class="col-sm-12 text-center">
             <img src="build/img/redwood-logotext.png" alt="logo redwood" class="img-fluid">
           </div>
         </div>
@@ -104,10 +103,11 @@
            <i class="fa fa-linkedin"></i> 
           </div>
           <div class="col-sm-4 text-center text-sm-start py-4 py-sm-0">
+            <button class="btn btn-primary rounded" type="button">
+              <a href="mailto:info@redwoodteam.tv?subject=SweetWords" class="text-decoration-none text-light">Contact us <i class="bi bi-envelope"></i></a>
+            </button>
             <p class="fs-5 pt-3 phone">Call me maybe?</p>
             <a href="tel:+34681327420" class="text-decoration-none">+34 681 32 74 20</a>
-            <p class="fs-5 pt-3 email">Send us an email</p>
-            <a href="mailto:info@redwoodteam.tv?subject=SweetWords" class="text-decoration-none text-secondary">info@redwoodteam.tv</a>
           </div>
         </div>
       </div>
@@ -115,9 +115,7 @@
 
     <!-- FOOTER -->
     <footer class="footer text-center text-md-end fs-6 py-2 px-5 d-block flex-column flex-md-row bg-footer">
-      <div class="footer-copyight">
-        <p class="py-2 fs-6 mx-md-5 text-uppercase mb-0">&copy;Redwood Team TV <span class="d-block">2022 All rights reserved.</span></p>
-      </div>
+      
     </footer>
 
   </section>
